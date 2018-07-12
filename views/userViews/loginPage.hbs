@@ -1,0 +1,26 @@
+<h1>Login</h1>
+
+<form action="/login" method="post">
+
+<label for="username">Username: </label>
+<input type="text" name="username" id="username">
+
+<label for="password">Password: </label>
+<input type="text" name="password" id="password">
+
+<button>Log In</button>
+</form>
+
+<h2>While You're Logging In, Check Out a Pokemon!</h2>
+<input type="number" id="poke-input">
+<br>
+<br>
+<button id="poke-btn">Find A Pokemon!</button>
+<div id = "poke-info"></div>
+
+
+{{#if message}}
+
+<div>{{message}}</div>
+
+{{/if}}

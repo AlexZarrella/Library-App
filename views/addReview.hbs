@@ -1,0 +1,16 @@
+<h1>{{theBook.title}}</h1>
+
+<form action="/books/{{theBook._id}}/reviews/create" method = "post">
+
+<label for= "reviewer">Name: </label>
+<input type="text" id = "reviewer" name= "reviewer">
+<br>
+<br>
+{{!--Example of a label without a for attribute, cannot click on the words--}}
+<label>Type Review: </label>
+<textarea name="content" cols="30" rows="10"></textarea>
+<br>
+<br>
+<button type= "submit">Submit Review</button>
+
+</form>
